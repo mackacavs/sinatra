@@ -2,5 +2,12 @@
   <img style='border: 3px dashed red' src='http://bit.ly/1eze8aE'>
   <h1>My name is <%=@random_name%> </h1>
 
+  <% if !@random_name %>
+  <form action="/named-cat">
+    Name: <br>
+    <input type="text" name = "name"><br>
+    <input type="submit" value="Submit">
+  </form>
+    <%end %>
 
 </div>
